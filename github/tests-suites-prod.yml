@@ -1,0 +1,4 @@
+configFile: "playwright.prod.config.js"
+suites:
+  smokeUI:
+    spec: "tests/addItemToCart.spec.js"

@@ -16,7 +16,7 @@ export default defineConfig({
       name: 'GoogleChrome',
       use: {
         channel: 'chrome',   // this makes it use your installed Chrome
-        headless: false,     // show browser UI
+        headless: process.env.CI === 'true',     // show browser UI
         baseURL: 'https://www.saucedemo.com/v1/',  // repeat if you want to override/use
         username: 'standard_user',
         password: 'secret_sauce',
